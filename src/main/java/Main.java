@@ -1,6 +1,7 @@
 import as.Account;
 import as.SmartDoor;
 import car.Car;
+import display.Display;
 import parameter.ParameterPassing;
 import parameter.Student;
 import utility.Converter;
@@ -54,8 +55,18 @@ public class Main {
 //		Utility utilInstance = new Utility();
 //		System.out.println("Instance ID: " + utilInstance.getInstanceId());
 
+//		double celsius = 25.0;
+//		System.out.printf("%.1f degrees C is %.1f degrees F.\n", celsius, Converter.celsiusToFahrenheit(celsius));
+
+		//	[6] METHOD OVERLOADING
+//		Display d = new Display();
+//		d.show(42);
+//		d.show("Hello");
+//		d.show("Goodbye", 3);
+
 		double celsius = 25.0;
 		System.out.printf("%.1f degrees C is %.1f degrees F.\n", celsius, Converter.celsiusToFahrenheit(celsius));
+		System.out.printf("%.1f degrees F is %.1f degrees C.\n", Converter.celsiusToFahrenheit(celsius, false), Converter.celsiusToFahrenheit(celsius, true));
 
 	}
 

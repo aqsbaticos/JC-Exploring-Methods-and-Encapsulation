@@ -9,5 +9,6 @@ public class Main {
 		myCar.startEngine();
 		String status = myCar.drive(60);
 		System.out.println(status);
+		myCar.turnOffEngine();
 	}
 }

@@ -1,3 +1,5 @@
+import as.Account;
+import as.SmartDoor;
 import car.Car;
 import parameter.ParameterPassing;
 import parameter.Student;
@@ -26,13 +28,25 @@ public class Main {
 //		System.out.println("Name after change: " + student.getName());
 
 		//	[3] USING VARARGS
-		VarargsExample.printMessages("Hello", "World");
-		VarargsExample.printMessages("Testing", "Varargs", "Here");
-		VarargsExample.printMessages();
+//		VarargsExample.printMessages("Hello", "World");
+//		VarargsExample.printMessages("Testing", "Varargs", "Here");
+//		VarargsExample.printMessages();
 
-		System.out.println(VarargsExample.findLargest(10, 5, 25, 15));
-		System.out.println(VarargsExample.findLargest(-5, -1, -10));
-		System.out.println(VarargsExample.findLargest());
+//		System.out.println(VarargsExample.findLargest(10, 5, 25, 15));
+//		System.out.println(VarargsExample.findLargest(-5, -1, -10));
+//		System.out.println(VarargsExample.findLargest());
+
+		//	[4] ACCESS SPECIFIERS
+//		Account myAccount = new Account();
+//		myAccount.displayAccountDetails();
+
+//		SmartDoor smartDoor = new SmartDoor();
+//		System.out.print("Is the door locked? "); System.out.println(smartDoor.isLocked());
+//		smartDoor.lockDoor();
+//		System.out.print("Is the door locked? "); System.out.println(smartDoor.isLocked());
+//		smartDoor.unlockDoor();
+//		System.out.print("Is the door locked? "); System.out.println(smartDoor.isLocked());
+
 	}
 
 	static void changeStudentName(Student student, String newName) {

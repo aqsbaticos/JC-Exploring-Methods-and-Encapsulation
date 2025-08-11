@@ -4,6 +4,8 @@ import car.Car;
 import display.Display;
 import parameter.ParameterPassing;
 import parameter.Student;
+import pizza.Computer;
+import pizza.Pizza;
 import utility.Converter;
 import utility.Utility;
 import vars.VarargsExample;
@@ -64,9 +66,28 @@ public class Main {
 //		d.show("Hello");
 //		d.show("Goodbye", 3);
 
-		double celsius = 25.0;
-		System.out.printf("%.1f degrees C is %.1f degrees F.\n", celsius, Converter.celsiusToFahrenheit(celsius));
-		System.out.printf("%.1f degrees F is %.1f degrees C.\n", Converter.celsiusToFahrenheit(celsius, false), Converter.celsiusToFahrenheit(celsius, true));
+//		double celsius = 25.0;
+//		System.out.printf("%.1f degrees C is %.1f degrees F.\n", celsius, Converter.celsiusToFahrenheit(celsius));
+//		System.out.printf("%.1f degrees F is %.1f degrees C.\n", Converter.celsiusToFahrenheit(celsius, false), Converter.celsiusToFahrenheit(celsius, true));
+
+		//	[7] CONSTRUCTORS AND CONSTRUCTOR OVERLOADING
+//		Pizza pizza1 = new Pizza();
+//		pizza1.display();
+//
+//		Pizza pizza2 = new Pizza("Pepperoni");
+//		pizza2.display();
+//
+//		Pizza pizza3 = new Pizza("Mushroom and Onion", 16);
+//		pizza3.display();
+
+		Computer computer1 = new Computer();
+		computer1.display(1);
+
+		Computer computer2 = new Computer("Dell");
+		computer2.display(2);
+
+		Computer computer3 = new Computer("Apple", 16);
+		computer3.display(3);
 
 	}
 

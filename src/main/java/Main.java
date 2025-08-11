@@ -28,7 +28,7 @@ public class Main {
 //		System.out.println("Before method call: " + originalValue);
 //		ParameterPassing.modifyValue(originalValue);
 //		System.out.println("After method call: " + originalValue);
-
+//
 //		Student student = new Student("Alex");
 //		System.out.println("Name before change: " + student.getName());
 //		changeStudentName(student, "Jordan");
@@ -38,7 +38,7 @@ public class Main {
 //		VarargsExample.printMessages("Hello", "World");
 //		VarargsExample.printMessages("Testing", "Varargs", "Here");
 //		VarargsExample.printMessages();
-
+//
 //		System.out.println(VarargsExample.findLargest(10, 5, 25, 15));
 //		System.out.println(VarargsExample.findLargest(-5, -1, -10));
 //		System.out.println(VarargsExample.findLargest());
@@ -46,7 +46,7 @@ public class Main {
 		//	[4] ACCESS SPECIFIERS
 //		Account myAccount = new Account();
 //		myAccount.displayAccountDetails();
-
+//
 //		SmartDoor smartDoor = new SmartDoor();
 //		System.out.print("Is the door locked? "); System.out.println(smartDoor.isLocked());
 //		smartDoor.lockDoor();
@@ -58,7 +58,7 @@ public class Main {
 //		System.out.println("App Name: " + Utility.getAppName());
 //		Utility utilInstance = new Utility();
 //		System.out.println("Instance ID: " + utilInstance.getInstanceId());
-
+//
 //		double celsius = 25.0;
 //		System.out.printf("%.1f degrees C is %.1f degrees F.\n", celsius, Converter.celsiusToFahrenheit(celsius));
 
@@ -67,7 +67,7 @@ public class Main {
 //		d.show(42);
 //		d.show("Hello");
 //		d.show("Goodbye", 3);
-
+//
 //		double celsius = 25.0;
 //		System.out.printf("%.1f degrees C is %.1f degrees F.\n", celsius, Converter.celsiusToFahrenheit(celsius));
 //		System.out.printf("%.1f degrees F is %.1f degrees C.\n", Converter.celsiusToFahrenheit(celsius, false), Converter.celsiusToFahrenheit(celsius, true));
@@ -81,25 +81,25 @@ public class Main {
 //
 //		Pizza pizza3 = new Pizza("Mushroom and Onion", 16);
 //		pizza3.display();
-
+//
 //		Computer computer1 = new Computer();
 //		computer1.display(1);
-
+//
 //		Computer computer2 = new Computer("Dell");
 //		computer2.display(2);
-
+//
 //		Computer computer3 = new Computer("Apple", 16);
 //		computer3.display(3);
 
 		//	[8] ENCAPSULATION
-//		Thermostat stat = new Thermostat(22.5);
-//		System.out.println("Initial temp: " + stat.getTemperatureCelsius());
-//
-//		stat.setTemperatureCelsius(5.0); // Try to set an invalid temp
-//		System.out.println("Temp after invalid change: " + stat.getTemperatureCelsius());
-//
-//		stat.setTemperatureCelsius(25.0); // Set a valid temp
-//		System.out.println("Temp after valid change: " + stat.getTemperatureCelsius());
+		Thermostat stat = new Thermostat(22.5);
+		System.out.println("Initial temp: " + stat.getTemperatureCelsius());
+
+		stat.setTemperatureCelsius(5.0); // Try to set an invalid temp
+		System.out.println("Temp after invalid change: " + stat.getTemperatureCelsius());
+
+		stat.setTemperatureCelsius(25.0); // Set a valid temp
+		System.out.println("Temp after valid change: " + stat.getTemperatureCelsius());
 
 		User user = new User("test");
 		user = new User("12345678");

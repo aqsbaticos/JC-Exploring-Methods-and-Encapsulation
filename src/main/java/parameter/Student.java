@@ -12,3 +12,4 @@ public class Student {
 	public void setName(String newName) { this.name = newName; }
 
 }
+

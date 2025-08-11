@@ -3,6 +3,7 @@ import as.SmartDoor;
 import car.Car;
 import parameter.ParameterPassing;
 import parameter.Student;
+import utility.Converter;
 import utility.Utility;
 import vars.VarargsExample;
 
@@ -49,9 +50,12 @@ public class Main {
 //		System.out.print("Is the door locked? "); System.out.println(smartDoor.isLocked());
 
 		//	[5] STATIC METHODS AND VARIABLES
-		System.out.println("App Name: " + Utility.getAppName());
-		Utility utilInstance = new Utility();
-		System.out.println("Instance ID: " + utilInstance.getInstanceId());
+//		System.out.println("App Name: " + Utility.getAppName());
+//		Utility utilInstance = new Utility();
+//		System.out.println("Instance ID: " + utilInstance.getInstanceId());
+
+		double celsius = 25.0;
+		System.out.printf("%.1f degrees C is %.1f degrees F.\n", celsius, Converter.celsiusToFahrenheit(celsius));
 
 	}
 

@@ -1,6 +1,7 @@
 import car.Car;
 import parameter.ParameterPassing;
 import parameter.Student;
+import vars.VarargsExample;
 
 public class Main {
 
@@ -19,10 +20,19 @@ public class Main {
 //		ParameterPassing.modifyValue(originalValue);
 //		System.out.println("After method call: " + originalValue);
 
-		Student student = new Student("Alex");
-		System.out.println("Name before change: " + student.getName());
-		changeStudentName(student, "Jordan");
-		System.out.println("Name after change: " + student.getName());
+//		Student student = new Student("Alex");
+//		System.out.println("Name before change: " + student.getName());
+//		changeStudentName(student, "Jordan");
+//		System.out.println("Name after change: " + student.getName());
+
+		//	[3] USING VARARGS
+		VarargsExample.printMessages("Hello", "World");
+		VarargsExample.printMessages("Testing", "Varargs", "Here");
+		VarargsExample.printMessages();
+
+		System.out.println(VarargsExample.findLargest(10, 5, 25, 15));
+		System.out.println(VarargsExample.findLargest(-5, -1, -10));
+		System.out.println(VarargsExample.findLargest());
 	}
 
 	static void changeStudentName(Student student, String newName) {

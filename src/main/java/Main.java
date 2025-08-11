@@ -3,6 +3,7 @@ import as.SmartDoor;
 import car.Car;
 import parameter.ParameterPassing;
 import parameter.Student;
+import utility.Utility;
 import vars.VarargsExample;
 
 public class Main {
@@ -46,6 +47,11 @@ public class Main {
 //		System.out.print("Is the door locked? "); System.out.println(smartDoor.isLocked());
 //		smartDoor.unlockDoor();
 //		System.out.print("Is the door locked? "); System.out.println(smartDoor.isLocked());
+
+		//	[5] STATIC METHODS AND VARIABLES
+		System.out.println("App Name: " + Utility.getAppName());
+		Utility utilInstance = new Utility();
+		System.out.println("Instance ID: " + utilInstance.getInstanceId());
 
 	}
 

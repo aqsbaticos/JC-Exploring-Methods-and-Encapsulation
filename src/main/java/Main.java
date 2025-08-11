@@ -6,6 +6,8 @@ import parameter.ParameterPassing;
 import parameter.Student;
 import pizza.Computer;
 import pizza.Pizza;
+import thermostat.Thermostat;
+import thermostat.User;
 import utility.Converter;
 import utility.Utility;
 import vars.VarargsExample;
@@ -80,15 +82,32 @@ public class Main {
 //		Pizza pizza3 = new Pizza("Mushroom and Onion", 16);
 //		pizza3.display();
 
-		Computer computer1 = new Computer();
-		computer1.display(1);
+//		Computer computer1 = new Computer();
+//		computer1.display(1);
 
-		Computer computer2 = new Computer("Dell");
-		computer2.display(2);
+//		Computer computer2 = new Computer("Dell");
+//		computer2.display(2);
 
-		Computer computer3 = new Computer("Apple", 16);
-		computer3.display(3);
+//		Computer computer3 = new Computer("Apple", 16);
+//		computer3.display(3);
 
+		//	[8] ENCAPSULATION
+//		Thermostat stat = new Thermostat(22.5);
+//		System.out.println("Initial temp: " + stat.getTemperatureCelsius());
+//
+//		stat.setTemperatureCelsius(5.0); // Try to set an invalid temp
+//		System.out.println("Temp after invalid change: " + stat.getTemperatureCelsius());
+//
+//		stat.setTemperatureCelsius(25.0); // Set a valid temp
+//		System.out.println("Temp after valid change: " + stat.getTemperatureCelsius());
+
+		User user = new User("test");
+		user = new User("12345678");
+		System.out.println("Current masked password: " + user.getPassword());
+		user.setPassword("pass");
+		System.out.println("Current masked password: " + user.getPassword());
+		user.setPassword("secure_password_123");
+		System.out.println("Current masked password: " + user.getPassword());
 	}
 
 	static void changeStudentName(Student student, String newName) {
